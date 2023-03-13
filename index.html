@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eu te amo!</title>
+	<style type="text/css">
+		body {
+			background-color: #F5DEB3; /* Cor de fundo */
+			font-family: Arial, sans-serif; /* Fonte do texto */
+			color: #555; /* Cor do texto */
+		}
+
+		h1 {
+			font-size: 40px;
+			margin-top: 80px;
+			text-align: center;
+		}
+
+		#coracao {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: pulse 2s ease-in-out infinite;
+		}
+
+		#texto {
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: bounce 2s ease-in-out infinite;
+		}
+
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.2);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		@keyframes bounce {
+			0% {
+				transform: translateY(0);
+			}
+			50% {
+				transform: translateY(-10px);
+			}
+			100% {
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Eu te amo!</h1>
+	<img id="coracao" src="https://images.vexels.com/media/users/3/136172/isolated/lists/148ec098a4529de7141003a8ec519d39-coracao-como-icone.png" alt="Coração pulsante">
+	<p id="texto">Gabriella</p>
+</body>
+</html>
